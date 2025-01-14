@@ -26,6 +26,7 @@ echo -e "${RED}Finding current MakeMKV version${NC}"
 MAKEMKV_VERSION=$(curl -s https://www.makemkv.com/download/ | grep -o "[0-9.]*.txt" | sed 's/.txt//')
 echo -e "${RED}Downloading MakeMKV $MAKEMKV_VERSION sha, bin, and oss${NC}"
 
+MAKEMKV_VERSION='1.17.8'
 set -ex
 savedAptMark="$(apt-mark showmanual)"
 
