@@ -22,7 +22,8 @@ on:
 
 env:
     # Use docker.io for Docker Hub if empty
-    REGISTRY: ghcr.io
+    #REGISTRY: ghcr.io
+    REGISTRY: ''
     # use DOCKERHUB_USERNAME as the name maybe different from the GitHub username
     IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/arm-dependencies
     TAG: latest
