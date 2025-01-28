@@ -103,13 +103,15 @@ jobs:
             -
                 name: Set Version number
                 run: |
-                    if [ ${{ steps.branch-name.outputs.is_default }} = true ]; then
-                      VER=$(cat VERSION)
-                      echo "VERSION=$VER" >> $GITHUB_ENV
-                    else
-                      echo "VERSION=${{ env.TAG }}" >> $GITHUB_ENV
-                      echo "${{ env.TAG }}" > ./VERSION
-                    fi
+                    VER=1.0
+         
+                    #if [ ${{ steps.branch-name.outputs.is_default }} = true ]; then
+                      #VER=$(cat VERSION)
+                      #echo "VERSION=$VER" >> $GITHUB_ENV
+                    #else
+                      #echo "VERSION=${{ env.TAG }}" >> $GITHUB_ENV
+                      #echo "${{ env.TAG }}" > ./VERSION
+                    #fi
             -
                 name: Set build datetime
                 run: |
