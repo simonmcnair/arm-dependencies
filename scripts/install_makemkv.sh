@@ -30,7 +30,10 @@ MAKEMKV_VERSION='1.17.7'
 set -ex
 savedAptMark="$(apt-mark showmanual)"
 
-wget -O 'sha256sums.txt.sig' "https://www.makemkv.com/download/makemkv-sha-${MAKEMKV_VERSION}.txt"
+#https://github.com/simonmcnair/arm-dependencies/blob/main/makemkv-bin-1.17.7.tar.gz?raw=true 
+
+#wget -O 'sha256sums.txt.sig' "https://www.makemkv.com/download/makemkv-sha-${MAKEMKV_VERSION}.txt"
+wget -O 'sha256sums.txt.sig' "https://github.com/simonmcnair/arm-dependencies/blob/main/makemkv-sha-${MAKEMKV_VERSION}.txt?raw=true"
 GNUPGHOME="$(mktemp -d)" && export GNUPGHOME
 gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 2ECF23305F1FC0B32001673394E3083A18042697
 gpg --batch --decrypt --output sha256sums.txt sha256sums.txt.sig
@@ -39,7 +42,7 @@ rm -rf "$GNUPGHOME" sha256sums.txt.sig
 
 export PREFIX='/usr/local'
 for ball in makemkv-oss makemkv-bin; do
-	wget -O "$ball.tgz" "https://www.makemkv.com/download/${ball}-${MAKEMKV_VERSION}.tar.gz"
+	wget -O "$ball.tgz" "https://github.com/simonmcnair/arm-dependencies/blob/main/${ball}-${MAKEMKV_VERSION}.tar.gz?raw=true"
 	sha256="$(grep "  $ball-${MAKEMKV_VERSION}[.]tar[.]gz\$" sha256sums.txt)"
 	sha256="${sha256%% *}"
 	[ -n "$sha256" ]
