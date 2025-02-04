@@ -1,0 +1,15 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+98268f1ca22130ec95d27c872d7802b74a14de7b52b45ae54d9af10631330e8c  Setup_MakeMKV_v1.17.7.exe
+8c5bc831bc952b1f873cc8450c64e392db0b2479b626d180f0ffc965668951d0  makemkv-bin-1.17.7.tar.gz
+762e552d46f9ec75a7c62dcb7d97c0fd9e6a15120d0ef6f5a080cee291d3a0ef  makemkv-oss-1.17.7.tar.gz
+0d858bddcdeec847a2563e25f68dba189fcdf23c53be3ee9a18f17b18e12eee3  makemkv_v1.17.7_osx.dmg
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2
+
+iHUEAREIAB0WIQQuzyMwXx/AsyABZzOU4wg6GAQmlwUCZkR77wAKCRCU4wg6GAQm
+lwI/AP9Y+XhybQ7XeY/z/zQqByiA5gGaH4zQ83K38VDmHxTFdgEAtFM1WrjKHJae
+hIbj/a34qtyHqqYDbjva7PoJ4CHRxAI=
+=ms2b
+-----END PGP SIGNATURE-----
